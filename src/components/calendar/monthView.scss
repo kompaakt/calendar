@@ -1,0 +1,130 @@
+.calendarMonth {
+  line-height: 1;
+  &__header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    padding: 12.5px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 32px;
+    background: #fff;
+    width: 100%;
+    max-width: 690px;
+  }
+  &__back-link {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: 500;
+    color: #007aff;
+    &::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 2px;
+      background: #007aff;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 0;
+      margin-top: 3px;
+      border-radius: 0 5px 5px 0;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 2px;
+      background: #007aff;
+      transform: rotate(-45deg);
+      position: absolute;
+      left: 0;
+      margin-top: -3px;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  padding: 0 15px 50px;
+  &__title {
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #000;
+  }
+  &__week {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__weekday {
+    width: calc(1 / 7 * 100% - (1 - 1 / 7) * 20px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    margin-right: 5px;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__space {
+    width: calc(5 / 7 * 100% - (1 - 1 / 7) * 10px);
+  }
+  &__day {
+    cursor: pointer;
+    width: calc(1 / 7 * 100% - (1 - 1 / 7) * 20px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-weight: normal;
+    padding: 7px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 17px;
+    position: relative;
+    margin: 6px 0px;
+    border-top: 1.5px solid #e8e8e8;
+
+    &::before {
+      content: "";
+      padding-top: 100%;
+    }
+    &:hover {
+      color: #007aff;
+    }
+    &--active {
+      border-top: 1.5px solid #008eff;
+      background: #e2f7ff;
+      color: #008eff;
+    }
+    &--event {
+      &::after {
+        display: block;
+      }
+    }
+    &--past {
+      color: #8f8e94;
+      &::after {
+        background: #cccccc;
+      }
+    }
+    &--blank {
+      visibility: hidden;
+    }
+  }
+}

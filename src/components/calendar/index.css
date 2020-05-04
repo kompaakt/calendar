@@ -1,0 +1,13 @@
+.calendar {
+  width: 100%;
+  max-width: 662px;
+}
+
+.calendar__monthTitle {
+  font-family: "SF Pro Display";
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+  text-transform: capitalize;
+}

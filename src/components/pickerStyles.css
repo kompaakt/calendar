@@ -1,0 +1,7 @@
+.rc-time-picker-panel-select > ul {
+  position: static;
+}
+
+.rc-time-picker-panel {
+  z-index: 9999;
+}

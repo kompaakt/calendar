@@ -1,0 +1,10 @@
+{
+  "react functional rebass component": {
+    "scope": "javascript,typescript, jsx",
+    "prefix": "rafc",
+    "body": [
+      "import React from \"react\"; \nimport { Flex, Box, Image, Text } from \"rebass\"; \n\nconst $0 = () => { return <Box></Box> };\n\nexport default $0;"
+    ],
+    "description": "Log output to console"
+  }
+}
