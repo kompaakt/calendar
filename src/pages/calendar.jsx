@@ -96,7 +96,6 @@ const CalendarPage = () => {
                 viewMode === "year" ? "#2FA3FF" : "#737373"
               }`,
               borderLeft: `${viewMode === "month" && "1px solid transparent"}`,
-              zIndex: `${viewMode === "year" && "2"}`,
               color: "#737373",
               backgroundColor: "white",
             }}

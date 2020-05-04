@@ -36,6 +36,7 @@ const NotificationWrapper = ({ type, ...props }) => {
       alignItems="center"
       maxWidth="600px"
       sx={{
+        zIndex: "999",
         borderRadius: "5px",
         boxShadow: `0 1px 2px rgba(0,0,0,0.07), 
                 0 2px 4px rgba(0,0,0,0.07), 
@@ -44,6 +45,7 @@ const NotificationWrapper = ({ type, ...props }) => {
                 0 16px 32px rgba(0,0,0,0.07), 
                 0 32px 64px rgba(0,0,0,0.07)`,
         wordBreak: "break-all",
+        backgroundColor: "white",
       }}
       p="20px"
     >
