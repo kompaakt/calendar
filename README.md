@@ -13,6 +13,6 @@
   2. npm run build
   
 ## Запуск
-  dev: npm run start
-  prod: serve -s build
+  * dev: npm run start
+  * prod: serve -s build
   
