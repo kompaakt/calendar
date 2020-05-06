@@ -12,4 +12,7 @@
   1. npm i
   2. npm run build
   
+## Запуск
+  dev: npm run start
+  prod: serve -s build
   
